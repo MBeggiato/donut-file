@@ -1,0 +1,43 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "decompile",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/donut-file.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--decompile",
+                "3_0_30#game-100-v3_0_30-r157326-B8353263.zip",
+            ]
+        },
+        {
+            "name": "recompile",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/donut-file.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--recompile",
+                "3_0_30#game-100-v3_0_30-r157326-B8353263",
+                "--output_dir",
+                "3_0_30#game-100-v3_0_30-r157326-B8353263"
+            ]
+        },
+        {
+            "name": "hash",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/donut-file.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--hash",
+                "3_0_0#hawhawmenu-ipad-v3_0_0-r406729-QTYEP9D8.zip"
+            ]
+        }
+    ]
+}
